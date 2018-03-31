@@ -15,4 +15,8 @@ public interface UrlDao {
 
     Url getUrl(String id);
 
+    String getSurl(String md5);
+
+    void saveSurl(String md5,String id);
+
 }

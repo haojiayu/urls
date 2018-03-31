@@ -17,7 +17,6 @@ function getShortUrl() {
             if (data.code == 0) {
                 $('#urls').val(getHost()+data.data);
             }
-
         }
     });
 
@@ -25,5 +24,5 @@ function getShortUrl() {
 function getHost() {
     var protocol = window.location.protocol;
     var host = window.location.host;
-    return protocol+'://'+host+'/';
+    return protocol+'//'+host+'/';
 }

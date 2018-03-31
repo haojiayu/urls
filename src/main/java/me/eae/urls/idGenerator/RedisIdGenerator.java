@@ -19,7 +19,7 @@ public class RedisIdGenerator implements IdGenerator{
     /**
      * 默认步长，为100
      */
-    private  final Integer  STEP_SIZE = 100;
+    private  final Integer  STEP_SIZE = 1024;
     private String idKey = "shortUrl";
     /**
      * 储存自增主键的key值
