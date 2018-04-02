@@ -9,6 +9,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
+
 /**
  * @author ceshi
  * @Title: ${file_name}
@@ -37,10 +39,9 @@ public class UrlController {
 
     @PostMapping("/getShortUrl")
     @ResponseBody
-    public Result getShortUrl(String url){
-        Url u = new Url();
-        u.setUrl(url);
-        String urls = urlService.saveUrl(u);
+    public Result getShortUrl(Url url){
+
+        String urls = urlService.saveUrl(url);
         return Result.OK(urls);
     }
 

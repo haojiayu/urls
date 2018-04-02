@@ -8,7 +8,7 @@ function getShortUrl() {
         cache : true,
         type : "POST",
         url : "/getShortUrl",
-        data : "url="+str,
+        data : {"url":str},
         async : false,
         error : function() {
             alert("系统异常");
@@ -21,6 +21,13 @@ function getShortUrl() {
     });
 
 }
+
+function getJSON(value) {
+    var json  = {};
+    json.url = value;
+    return json;
+}
+
 function getHost() {
     var protocol = window.location.protocol;
     var host = window.location.host;

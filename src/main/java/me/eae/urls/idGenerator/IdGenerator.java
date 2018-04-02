@@ -6,5 +6,6 @@ package me.eae.urls.idGenerator;
 public interface IdGenerator {
 
     Long next();
+    void init();
 
 }
