@@ -18,7 +18,7 @@
                 <label>请输入长网址</label>
                 <textarea class="form-control" rows="3" id = "url" ></textarea>
             </div>
-            <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-send" aria-hidden="true" onclick = "getShortUrl()"></span> 生成
+            <button type="button" class="btn btn-success" onclick = "getShortUrl()"> <span class="glyphicon glyphicon-send" aria-hidden="true" ></span> 生成
             </button>
 
 
@@ -26,10 +26,10 @@
 
     </div>
     <h3></h3>
-    <div class="alert alert-dismissable alert-success">
+    <div class="alert alert-dismissable alert-success hidden" id = "sUrlDiv">
         <!--  <div class="alert alert-dismissable alert-success"> -->
         <!--  <div class="alert alert-dismissable alert-danger"> -->
-        <h4 class="text-center">
+        <h4>
             短网址
         </h4> <strong id = "sUrl"></strong>
 

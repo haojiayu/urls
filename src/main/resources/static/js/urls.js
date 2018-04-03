@@ -14,6 +14,7 @@ function getShortUrl() {
             alert("系统异常");
         },
         success : function(data) {
+            $('#sUrlDiv').removeClass("hidden")
             if (data.code == 0) {
                 $('#sUrl').html(getHost()+data.data);
             }
