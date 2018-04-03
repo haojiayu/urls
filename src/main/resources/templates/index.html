@@ -1,17 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8">
+    <title>Bootstrap 实例 - 文本框</title>
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+
 </head>
 <body>
-<h1>index</h1>
-<input type="text" id = "url">
-<button  onclick = "getShortUrl()">生成</button>
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <h3 class="text-center">
+                短链接生成器
+            </h3>
 
-<textarea id = "urls"></textarea>
+            <div class="form-group">
+                <label>请输入长网址</label>
+                <textarea class="form-control" rows="3" id = "url" ></textarea>
+            </div>
+            <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-send" aria-hidden="true" onclick = "getShortUrl()"></span> 生成
+            </button>
+
+
+        </div>
+
+    </div>
+    <h3></h3>
+    <div class="alert alert-dismissable alert-success">
+        <!--  <div class="alert alert-dismissable alert-success"> -->
+        <!--  <div class="alert alert-dismissable alert-danger"> -->
+        <h4 class="text-center">
+            短网址
+        </h4> <strong id = "sUrl"></strong>
+
+    </div>
+</div>
+<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="/js/urls.js"></script>
 
 </body>
-<script src="/js/jquery.min.js?v=2.1.4"></script>
-<script src="/js/urls.js"></script>
-</html>

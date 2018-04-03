@@ -17,6 +17,7 @@ import org.springframework.stereotype.Component;
 public class InitIdGenerator implements ApplicationRunner {
     @Autowired
     IdGenerator idGenerator;
+
     @Override
     public void run(ApplicationArguments applicationArguments) throws Exception {
         System.out.println("init");

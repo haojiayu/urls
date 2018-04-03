@@ -16,7 +16,7 @@ import java.util.Map;
 public class GlobalExceptionHandler {
     @ExceptionHandler(value = Exception.class)
     @ResponseBody
-    public void HolidaysHandler(Exception e){
+    public void HolidaysHandler(Exception e) {
         e.printStackTrace();
     }
 }

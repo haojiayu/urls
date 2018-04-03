@@ -23,6 +23,7 @@ import java.util.Arrays;
 @Component
 public class LogAspect {
     private static final Logger logger = LoggerFactory.getLogger(LogAspect.class);
+
     @Pointcut("execution( * me.eae.urls.controller..*(..))")//两个..代表所有子目录，最后括号里的两个..代表所有参数
     public void logPointCut() {
     }

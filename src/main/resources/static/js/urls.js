@@ -15,17 +15,11 @@ function getShortUrl() {
         },
         success : function(data) {
             if (data.code == 0) {
-                $('#urls').val(getHost()+data.data);
+                $('#sUrl').html(getHost()+data.data);
             }
         }
     });
 
-}
-
-function getJSON(value) {
-    var json  = {};
-    json.url = value;
-    return json;
 }
 
 function getHost() {
